@@ -19,7 +19,8 @@ The Technical Issues in Tools Development Roundtables continue to be one of the 
 * Usability continues to be a primary concern from our users. Click reduction and other ways of reducing friction in your tools is more important with each iteration.  
 使いやすさは、ユーザーからの主要な関心事であり続けている。クリック数の削減や、それ以外でもツール内のストレスを減らす方法は、各イテレーションでより重要となっている。
 * Teams that have good relationships with their users express developing better tools through this interaction. Developers need to “eat their own dog food”.  
-ユーザーとの良好な関係を持っているチームは、対話を通してより良いツールを開発し届けます。開発者は、「自分のドッグフードを食べる」必要があります。
+ユーザーとの良好な関係を持っているチームは、対話を通してより良いツールを開発し届けます。開発者は、「自分でドッグフードを食べる」必要があります。 
+訳注：ツールを実際に使用してユーザビリティをテストする事を、ドッグフーディングと呼ぶ表現からきています
 * Larger teams with more open tools are starting to employ TechArt and users to create tools. This can be accomplished though extensibility points like “scripting” or plugin based solutions. I thought of the macro recording system in VS as an example and something that could be accomplished with a well defined command architecture at the base level of the tools.  
 オープンなツールを多く使用する大規模なチームはテクニカルアーティストをツールの作成に採用し始めています。
 「スクリプト」やプラグインなどをベースにしたソリューションの拡張点を通して、ツールを作成します。
@@ -27,7 +28,7 @@ The Technical Issues in Tools Development Roundtables continue to be one of the 
 * When teams allow for user created tools, there is no expectation of support, although there is consideration for useful tools and promoting them to fully supported versions.  
 チームはユーザーが作成したツールを導入する場合、使い勝手の良いツールで、充分なサポートされたバージョンを推し進めたと考えても、サポートは期待できません。
 * Automation came up in this topic (more on it below), but design your tool with automation in mind from the ground up. Command line driving (for batch/script files) or being able to launch tools to specific configurations (open a tool with a specific document or screen up) were given as examples.  
-自動化をこのトピックで扱いましたが（下記で、より詳しく説明します）、ツールは、ゼロから自動化を念頭に置いて設計してください。（バッチ/スクリプトファイルの場合）コマンドライン実行や、（特定のドキュメントを読み込んでツールを立ち上げたり、起動時の）特別の設定でツールを起動することができることが例として挙げられた。
+自動化をこのトピックで扱いましたが（下記で、より詳しく説明します）、ツールをゼロから設計する際は自動化を念頭に置いてください。（バッチ/スクリプトファイルの場合）コマンドライン実行や、（特定のドキュメントを読み込んでツールを立ち上げたり、起動時の）特別の設定でツールを起動することができることが例として挙げられた。
 
 ## Automation
 自動化
@@ -45,7 +46,7 @@ The Technical Issues in Tools Development Roundtables continue to be one of the 
 ある大手スタジオは、ユーザーが分析を開始できるようにする前のテストデータを積み上げたところで問題に遭遇しました。
 これは、テストへ対応する際に問題が多く出ました。テストデータをすぐに積み上げないように目を慣らすのを推奨しました。
 * If your tool support automation, good user feedback is essential. Automating a dozen steps only to have it crap out on the end with a generic failure message is not productive.  
-あなたのツールのサポートを自動化するには、優れたユーザーからのフィードバックが不可欠です。一般的な失敗メッセージを最後に機能しなくなる1ダース(12)もの工程を自動化することは生産が高くありません。
+あなたのツールが自動化をサポートするには、優れたユーザーからのフィードバックが不可欠です。一般的な失敗メッセージを最後に機能しなくなる1ダース(12)もの工程を自動化することは生産が高くありません。
 * While it may initially introduce multiple steps to accomplish an action, it is best practice not to overload functionality (big-red button). You can always automate multiple steps together later if necessary.  
 自動化しようとすることは、最初にアクションを達成するために多数のステップを導入しているかもしれませんが、機能を詰め込みすぎない(大きな１つの赤いボタンにしない)ようお勧めします。必要ならば常に後で一緒に多数のステップを自動化することができます。
 * Most studios appear to be using a hybrid homegrown/3rd-party automation solution. Python->RPC was one solution. One studio is using Jenkins CI to schedule the automation testing.  
