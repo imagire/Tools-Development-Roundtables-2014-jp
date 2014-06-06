@@ -212,7 +212,7 @@ ANT, Grant/Javascript, CruiseControl with MSBuild, Unity, Incredibuildが使っ�
 60% がデータビルドシステムのコアなコンセプトとしてマルチプラットフォームのサポートを言う
 
 ## Pipeline “Chugging”
-パイプラインの「一気飲み」
+パイプラインの「継続燃焼」
 
 * How do you deal with the stalls and other implications of gating based on results of CI?  
 どのようにしてCIの結果に基づいて、ストールやゲートを閉じたことによる他の影響に対処しますか？
