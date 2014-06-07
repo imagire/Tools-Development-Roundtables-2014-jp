@@ -128,7 +128,7 @@ OpenCL は、１つのチームだけで、コリジョン生成パイプライ�
 * Object DBs were inquired about specifically for asset version control.  
 他のオブジェクトDBも、特定のアセット管理として聞かれた
 * A few shops are still using some form of live data, but this seems to be both smaller shops or studios with a very different deployment methodology.  
-少数の会社では、まだライブデータの用紙を使っている。しかし、非常に異なる開発手法をとる会社のようである。
+少数の会社では、まだライブデータの形式を使っている。しかし、非常に異なる開発手法をとる会社のようである。
 * Bigger studios have started to use CI for their data and using a label or other method to sync last good data. We avoid this by requiring items to build before submit.  
 大きなスタジオほど、データにCIを使い始めている。ラベルなどで直前の正常なデータへの同期方法を持っている。我々はsubmitする前にアイテムをビルドすることを強要することで、これらを避けている。
 
@@ -217,9 +217,9 @@ ANT, Grant/Javascript, CruiseControl with MSBuild, Unity, Incredibuildが使っ�
 * How do you deal with the stalls and other implications of gating based on results of CI?  
 どのようにしてCIの結果に基づいて、ストールやゲートを閉じたことによる他の影響に対処しますか？
 * 60% or more have someone who wrangles their CIS system.  
-60%以上は、それらのCIS（お客さま情報システム）のシステムについて世話をする人を確保しています。
+60%以上は、CIのシステムについて世話をする人を準備しています。
 * If your CIS system is crunching on data, make that apparent/inspectable by your users.  
-あなたのCISのシステムがデータについてバリバリ壊れている場合は、そのことをあなたのユーザに見える化/検査できるようにしてください。
+あなたのCIのシステムがデータをバリバリ壊している場合は、そのことをあなたのユーザに見える化/検査できるようにしてください。
 * Make public or VERY PUBLIC who is breaking your builds.  
 あなたのビルド壊している人を公開、または派手に公開してください。
 * If you find yourself in situations of repeated breakage, put your senior staff in charge. They can often apply the necessary leverage to communicate the importance of not breaking builds to your staff.  
@@ -249,7 +249,7 @@ TeamCity は、ウェブアクセスできるものとして成果物を作成�
 * Outside of core systems there were some questions related to test falures due to changes to requirements that invalidate tests.  
 コア・システムの外であるが、テストを無効にする要件の変更に起因する失敗テストに関していくつかの質問があった。
 * Test “things that don't change”. I read into this as “test things that have stable requirements”.  
-テストは「変更しないもの」。私は、これを「安定した要求をもつテストの事」としてこれを読みます。
+テストは「変更しないもの」。私は、これを「「変更されない要求に関するテストの事」としてこれを読みます。
 * Make sure that the people writing the code are also maintaining the tests.  
 コードを書く人々がテストもメンテナンスしていることを確かめてください。
 * Have QA modify test scripts.  
@@ -261,7 +261,7 @@ QAにテスト・スクリプトを修正させてください。
 * One team locked the entire perforce depot on broken build. They said they had 48 devs. A lot of raised eyebrows and questions on this one.  
 あるチームは、ビルドが壊れた場合にPERFORCEデポを完全にロックしています。彼らは開発者は48人と述べた。たくさん眉がつりあがり、チーム内で質問が飛び交った。
 * Use staged builds in your CI system.  
-CIシステムの中でステージング環境へデプロイするビルドを使ってください
+CIシステムは、ステージング環境でのビルドを使ってください
 * Make the team responsible for build stability.  
 チームにビルド安定性の責任を負わせてください
 * Use nightly functionality testing.  
@@ -274,7 +274,7 @@ CIシステムの中でステージング環境へデプロイするビルドを
 他のユーザーに通知して、サブミットの競合を防ぐために、コードがテスト中であることを示すためのPERFORCEのファイルロックを使用してください。
 
 ## Scaling Automated Testing
-テスト自動化の拡張
+テスト自動化のスケーリング
 
 * What do you do when your platform has expensive dev hardware?  
 プラットフォームに高価な開発ハードウェアがあるときはどうしますか？
@@ -389,7 +389,7 @@ Microsoft codeplex はツールのコードを探すための場である。 htt
 * Can you make the game run with no data? This is ideal.  
 データなしにゲームを動かすことができますか？これが理想です。
 * You can use known-good default assets as stand-ins for broken data as opposed to holding your user's up.  
-ユーザーが壊れたデータで万歳しないように、知られた良いディフォルトデータを組み込めるでしょ
+ユーザーが壊れたデータで万歳しないように、知られた良いディフォルトデータを組み込めるでしょう
 
 ## Asset Organization
 アセットの組織化
